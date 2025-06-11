@@ -1,6 +1,8 @@
 body{
   background-color: black;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .join_room{
@@ -56,7 +58,7 @@ body{
   background-color: rgb(28, 99, 28);
   height: 550px;
   position: relative;
-  border: 1px solid yellow;
+  border: 1.5px solid yellow;
 }
 
 .chatbody{
@@ -83,4 +85,42 @@ body{
   font-size: 1rem;
   font-weight: bolder;
 
+}
+
+.msgcontent{
+  display: flex;
+  /* flex-direction: column; */
+  margin: 5px;
+  font-weight: bolder;
+}
+
+#you{
+  justify-content: flex-end;
+}
+#y{
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+#other{
+  justify-content: flex-start;
+}
+#b{
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.msgdetails{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.auto-scrolling::-webkit-scrollbar{
+  display: none;
 }
